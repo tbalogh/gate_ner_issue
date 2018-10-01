@@ -7,5 +7,5 @@ To reproduce the issue follow the steps:
 
 3. chmod +x ./emw.sh
 
-4. cat working_example.txt | ./emw.sh -t ner
-5. cat not_working_example.txt | ./emw.sh -t ner
+4. cat working_example.txt | ./emw.sh -t ner |  grep -B 5 -A 1 "NER"
+5. cat not_working_example.txt | ./emw.sh -t ner | grep -B 5 -A 1 "NER"
